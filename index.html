@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>GifTastic!</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header id="title">
+                <h1>Gif Search</h1>
+                <p>powered by <a href="https://giphy.com/" target="blank_">Giphy</a></p> 
+            </header>
+    <div class="wrapper">
+        <!-- View where buttons will be placed -->
+        <div id="buttons-view"></div>
+        <!-- Our form -->
+        <div id="input-container">
+            <div class="input-form">
+                <p>
+                    Enter your search term to create a new image search button:
+                </p>
+                <form>
+                    <input type="text" id="gif-search" />
+                    <p>Number of images to return:</p>
+                    <input type="text" id="image-limit" value="10" width="12" />
+                    <div id="ratings-inputs">
+                        <p>Select a rating level:</p>
+                        <div id="ratings-select">
+
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <input type="submit" id="search-button" />
+                </form>
+            </div>
+        </div>
+        <div id="results-container"></div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="assets/javascript/script.js"></script>
+</body>
+
+</html>
